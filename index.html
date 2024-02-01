@@ -4,27 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Film Divvy</title>
+    <script src="https://kit.fontawesome.com/169aede6d4.js" crossorigin="anonymous"></script>
+    <title>Movie App</title>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h2>Film Divvy</h2>
-            <ul>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
+        <div class="head-container">
+            <nav>
+                <h2>Film Divvy</h2>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
                 <li><a href="#">Account</a></li>
-            </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <h1>Search movie to find recommnedations!</h1>
-        <form>
-            <input id="input"type="text" placeholder="Enter Movie...">
-            <button id="button">Search</button>
-        </form>
+        <div class="main-container">
+            <h1>Search movie to find recommnedations!</h1>
+            <form id="form">
+                <input id="input" type="text" placeholder="Enter Movie...">
+                <button id="button">Search</button>
+            </form>
+        </div>
     </main>
 </body>
 <script src="app.js"></script>
