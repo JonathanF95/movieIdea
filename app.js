@@ -4,6 +4,8 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=e4e758156e
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 const main = document.getElementById('main');
+const mylikes = document.getElementById('mylikes');
+const thumbsDown = document.getElementById('thumbs-down')
 
 function shortenText(text, maxLength) {
     if (text.length <= maxLength) {
@@ -43,15 +45,17 @@ function showMovies(movies) {
         <h3>Overview</h3>
         <p>${shortOverview}</p>  <!-- Use the shortened overview -->
         <div class="icons">
-        <i class="fa-regular fa-thumbs-up"></i>
-        <i class="fa-regular fa-thumbs-down"></i>
+        <i class="fa-regular fa-thumbs-up" id="thumbs-up"></i>
+        <i class="fa-regular fa-thumbs-down" id="thumbs-down"></i>
         </div>
         </div>
         `
 
         main.appendChild(movieEl)
+
     })
 }
+
 
 function getClassbyRate(vote){
     if(vote >= 8){
