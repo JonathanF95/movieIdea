@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lato&family=Poppins&family=Space+Mono&display=swap');
 
+/* Universal Styles */
 *{
     box-sizing: border-box;
 }
@@ -28,6 +29,7 @@ header{
     width: 87%;
     margin: 0 auto;
 }
+/* Nav Bar Styles */
 nav{
     display: flex;
     align-items: center;
